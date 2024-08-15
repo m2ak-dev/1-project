@@ -3,32 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-project</title>
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f7f7f7;
+        }
+
+        .invitation {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #c8d6e5;
+            padding: 30px 20px;
+        }
+
+        .couple-name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2e86de;
+        }
+
+        .save-date {
+            font-size: 18px;
+            color: #576574;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .main-content {
+            padding: 20px 30px;
+        }
+
+        .wedding-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .names {
+            font-size: 28px;
+            color: #2e86de;
+            text-align: center;
+        }
+
+        .location, .event-date, .hashtag {
+            font-size: 18px;
+            color: #576574;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .rsvp-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #2e86de;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .story-section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #2e86de;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-size: 16px;
+            color: #576574;
+            margin-bottom: 10px;
+        }
+
+        .story-text {
+            font-size: 16px;
+            color: #576574;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #c8d6e5;
+            border-top: 1px solid #576574;
+        }
+
+        .monogram {
+            font-size: 36px;
+            color: #2e86de;
+            margin-bottom: 20px;
+        }
+
+        .footer-text {
+            font-size: 18px;
+            color: #576574;
+        }
+
+        .details {
+            font-size: 16px;
+            color: #576574;
+            margin-bottom: 10px;
+        }
+
+        .website a {
+            font-size: 16px;
+            color: #2e86de;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .rsvp-reminder {
+            font-size: 16px;
+            color: #576574;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ahmet Turan</h1>
-    <h2>Web Developer</h2>
+    <div class="invitation">
+        <div class="header">
+            <h1 class="couple-name">Kelley & Nicholas</h1>
+            <p class="save-date">Save the Date</p>
+        </div>
 
-    <section>
-        <h3>About Me</h3>
-        <p>Hello,I am a passionate web developer with a love for creating interactive and user-friendly websites. My journey in the world of web development began with a curiosity to understand how websites work and has since evolved into a rewarding career.</p>
-    
-        <p>I specialize in front-end development, where I bring designs to life using HTML, CSS, and JavaScript. I enjoy the creative process of crafting visually appealing and functional web experiences that leave a positive impact on users.</p>
-        
-        <p>When I'm not coding, you can find me exploring new technologies, keeping up with the latest web development trends, or simply enjoying a good cup of coffee while brainstorming new ideas for my next project.</p>
-        
-        <p>Thank you for visiting my website, and I hope you enjoy exploring my work and learning more about my journey in web development.</p>
-    
-    </section>
+        <div class="main-content">
+            <div class="intro">
+                <img src="wedding-photo.jpg" alt="Wedding Photo" class="wedding-img">
+                <h2 class="names">Kelley Jenkins & Nicholas Morris</h2>
+                <p class="location">Fidelity, California</p>
+                <p class="event-date">Saturday, July 7th, 2023</p>
+                <p class="hashtag">#NicholasAndKelley</p>
+                <button class="rsvp-button">RSVP</button>
+            </div>
 
-    <section>
-        <h3>Contact Information</h3>
-        <p>Email: mirfozilbm@proton.me</p>
-        <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Ahmet Turan</p>
-    </footer>
+            <div class="story-section">
+                <h3 class="section-title">How We Met</h3>
+                <p class="date">August 17, 2020</p>
+                <p class="story-text">It was a sunny afternoon when we first crossed paths...</p>
+
+                <h3 class="section-title">The Proposal</h3>
+                <p class="date">June 9, 2022</p>
+                <p class="story-text">On a beautiful evening, under the stars, Nicholas asked Kelley...</p>
+            </div>
+
+            <div class="footer">
+                <h3 class="monogram">K&N</h3>
+                <p class="footer-text">We are waiting for you at our wedding!</p>
+                <p class="details">For more details, visit our wedding website:</p>
+                <p class="website"><a href="http://www.nicholasandkelley.com">www.nicholasandkelley.com</a></p>
+                <p class="rsvp-reminder">Please RSVP by June 28th, 2023.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
